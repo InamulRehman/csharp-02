@@ -31,5 +31,13 @@ namespace Project1_CollegeMgmtSystem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Mainform mainForm = new Mainform();
+            mainForm.Show();
+            this.Hide();
+
+        }
     }
 }
