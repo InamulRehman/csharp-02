@@ -31,6 +31,7 @@ namespace Project1_CollegeMgmtSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
@@ -38,7 +39,6 @@ namespace Project1_CollegeMgmtSystem
             this.gunaCircleButton4 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaCircleButton5 = new Guna.UI.WinForms.GunaCircleButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,18 @@ namespace Project1_CollegeMgmtSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(825, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(778, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 34);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -192,24 +204,12 @@ namespace Project1_CollegeMgmtSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(320, 428);
+            this.button1.Location = new System.Drawing.Point(330, 401);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 29);
             this.button1.TabIndex = 6;
             this.button1.Text = "LogOut";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(778, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 34);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Mainform
             // 
