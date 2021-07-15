@@ -16,5 +16,20 @@ namespace Project1_CollegeMgmtSystem
         {
             InitializeComponent();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Department_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

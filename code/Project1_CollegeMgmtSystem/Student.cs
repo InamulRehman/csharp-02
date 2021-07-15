@@ -66,5 +66,10 @@ namespace Project1_CollegeMgmtSystem
         {
 
         }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

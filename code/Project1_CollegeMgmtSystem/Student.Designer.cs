@@ -56,6 +56,7 @@ namespace Project1_CollegeMgmtSystem
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +78,7 @@ namespace Project1_CollegeMgmtSystem
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(485, 57);
+            this.label3.Location = new System.Drawing.Point(424, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 34);
             this.label3.TabIndex = 3;
@@ -100,7 +101,7 @@ namespace Project1_CollegeMgmtSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(346, 9);
+            this.label1.Location = new System.Drawing.Point(296, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(408, 34);
             this.label1.TabIndex = 1;
@@ -120,7 +121,7 @@ namespace Project1_CollegeMgmtSystem
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label4.Location = new System.Drawing.Point(12, 112);
+            this.label4.Location = new System.Drawing.Point(12, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 23);
             this.label4.TabIndex = 4;
@@ -131,7 +132,7 @@ namespace Project1_CollegeMgmtSystem
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox1.ForeColor = System.Drawing.Color.SlateBlue;
-            this.maskedTextBox1.Location = new System.Drawing.Point(98, 106);
+            this.maskedTextBox1.Location = new System.Drawing.Point(98, 128);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(162, 26);
             this.maskedTextBox1.TabIndex = 5;
@@ -153,7 +154,7 @@ namespace Project1_CollegeMgmtSystem
             // 
             this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.maskedTextBox2.Location = new System.Drawing.Point(98, 160);
+            this.maskedTextBox2.Location = new System.Drawing.Point(98, 163);
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(162, 26);
             this.maskedTextBox2.TabIndex = 7;
@@ -166,9 +167,9 @@ namespace Project1_CollegeMgmtSystem
             this.label6.ForeColor = System.Drawing.Color.SlateBlue;
             this.label6.Location = new System.Drawing.Point(12, 205);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 23);
+            this.label6.Size = new System.Drawing.Size(76, 23);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Name";
+            this.label6.Text = "Gender";
             // 
             // comboBox1
             // 
@@ -177,7 +178,7 @@ namespace Project1_CollegeMgmtSystem
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(98, 209);
+            this.comboBox1.Location = new System.Drawing.Point(98, 205);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 23);
             this.comboBox1.TabIndex = 9;
@@ -307,7 +308,7 @@ namespace Project1_CollegeMgmtSystem
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(332, 123);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(315, 178);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -335,6 +336,7 @@ namespace Project1_CollegeMgmtSystem
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -383,14 +385,25 @@ namespace Project1_CollegeMgmtSystem
             this.button4.BackColor = System.Drawing.Color.SlateBlue;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(68, 503);
+            this.button4.Location = new System.Drawing.Point(56, 509);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 37);
+            this.button4.Size = new System.Drawing.Size(141, 28);
             this.button4.TabIndex = 22;
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label11.Location = new System.Drawing.Point(543, 131);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(196, 34);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Students List";
             // 
             // Student
             // 
@@ -398,6 +411,7 @@ namespace Project1_CollegeMgmtSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1024, 648);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -458,5 +472,6 @@ namespace Project1_CollegeMgmtSystem
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label11;
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Project1_CollegeMgmtSystem
 {
-    public partial class Form2 : Form
+    public partial class Fees : Form
     {
-        public Form2()
+        public Fees()
         {
             InitializeComponent();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
