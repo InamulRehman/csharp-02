@@ -47,5 +47,15 @@ namespace VolumeConverter
             clTextBox.Text = "";
             litreTextBox.Text = "";
         }
+
+        private void litreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void volumeConverter_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

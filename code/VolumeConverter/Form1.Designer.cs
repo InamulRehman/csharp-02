@@ -41,71 +41,90 @@ namespace VolumeConverter
             // convertClTitleLabel
             // 
             this.convertClTitleLabel.AutoSize = true;
-            this.convertClTitleLabel.Location = new System.Drawing.Point(156, 55);
+            this.convertClTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convertClTitleLabel.Location = new System.Drawing.Point(187, 54);
             this.convertClTitleLabel.Name = "convertClTitleLabel";
-            this.convertClTitleLabel.Size = new System.Drawing.Size(95, 13);
+            this.convertClTitleLabel.Size = new System.Drawing.Size(261, 31);
             this.convertClTitleLabel.TabIndex = 0;
             this.convertClTitleLabel.Text = "Convert CL to Litre";
             this.convertClTitleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // clTextBox
             // 
-            this.clTextBox.Location = new System.Drawing.Point(159, 123);
+            this.clTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clTextBox.Location = new System.Drawing.Point(193, 123);
+            this.clTextBox.Multiline = true;
             this.clTextBox.Name = "clTextBox";
-            this.clTextBox.Size = new System.Drawing.Size(152, 20);
+            this.clTextBox.Size = new System.Drawing.Size(118, 41);
             this.clTextBox.TabIndex = 1;
+            this.clTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.clTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // litreTextBox
             // 
-            this.litreTextBox.Location = new System.Drawing.Point(159, 186);
+            this.litreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.litreTextBox.Location = new System.Drawing.Point(193, 197);
+            this.litreTextBox.Multiline = true;
             this.litreTextBox.Name = "litreTextBox";
-            this.litreTextBox.Size = new System.Drawing.Size(152, 20);
+            this.litreTextBox.Size = new System.Drawing.Size(118, 41);
             this.litreTextBox.TabIndex = 2;
+            this.litreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.litreTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // convertButton
             // 
-            this.convertButton.Location = new System.Drawing.Point(159, 254);
+            this.convertButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.convertButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.convertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convertButton.ForeColor = System.Drawing.Color.White;
+            this.convertButton.Location = new System.Drawing.Point(193, 282);
             this.convertButton.Name = "convertButton";
-            this.convertButton.Size = new System.Drawing.Size(75, 23);
+            this.convertButton.Size = new System.Drawing.Size(90, 35);
             this.convertButton.TabIndex = 3;
             this.convertButton.Text = "Convert";
-            this.convertButton.UseVisualStyleBackColor = true;
+            this.convertButton.UseVisualStyleBackColor = false;
             this.convertButton.Click += new System.EventHandler(this.convertButton_Click);
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(240, 254);
+            this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.ForeColor = System.Drawing.Color.White;
+            this.clearButton.Location = new System.Drawing.Point(337, 282);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.Size = new System.Drawing.Size(90, 35);
             this.clearButton.TabIndex = 4;
             this.clearButton.Text = "Clear";
-            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // clLabel
             // 
             this.clLabel.AutoSize = true;
-            this.clLabel.Location = new System.Drawing.Point(329, 123);
+            this.clLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clLabel.Location = new System.Drawing.Point(332, 123);
             this.clLabel.Name = "clLabel";
-            this.clLabel.Size = new System.Drawing.Size(20, 13);
+            this.clLabel.Size = new System.Drawing.Size(45, 29);
             this.clLabel.TabIndex = 5;
             this.clLabel.Text = "CL";
             // 
             // litreLabel
             // 
             this.litreLabel.AutoSize = true;
-            this.litreLabel.Location = new System.Drawing.Point(329, 186);
+            this.litreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.litreLabel.Location = new System.Drawing.Point(332, 197);
             this.litreLabel.Name = "litreLabel";
-            this.litreLabel.Size = new System.Drawing.Size(27, 13);
+            this.litreLabel.Size = new System.Drawing.Size(65, 29);
             this.litreLabel.TabIndex = 6;
             this.litreLabel.Text = "Litre";
+            this.litreLabel.Click += new System.EventHandler(this.litreLabel_Click);
             // 
             // volumeConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.litreLabel);
             this.Controls.Add(this.clLabel);
@@ -114,8 +133,12 @@ namespace VolumeConverter
             this.Controls.Add(this.litreTextBox);
             this.Controls.Add(this.clTextBox);
             this.Controls.Add(this.convertClTitleLabel);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
+            this.MaximizeBox = false;
             this.Name = "volumeConverter";
             this.Text = "Volume Coverter CL to Litre";
+            this.Load += new System.EventHandler(this.volumeConverter_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
