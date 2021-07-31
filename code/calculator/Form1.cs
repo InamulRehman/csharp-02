@@ -24,8 +24,8 @@ namespace calculator
         {
             if (resultBox.Text == "0" || (isOperatorClicked))
                 resultBox.Clear();
-            isOperatorClicked = false;
 
+            isOperatorClicked = false;
             Button button = (Button)sender;
 
             if (button.Text == ".")
@@ -75,7 +75,7 @@ namespace calculator
                 case "-":
                     resultBox.Text = (resultValue - Double.Parse(resultBox.Text)).ToString();
                     break;
-                case "ˣ":
+                case "˟":
                     resultBox.Text = (resultValue * Double.Parse(resultBox.Text)).ToString();
                     break;
                 case "÷":
