@@ -22,11 +22,20 @@ namespace calculator
 
         private void click_button(object sender, EventArgs e)
         {
-            if (resultBox.Text == "0")
+            if (resultBox.Text == "0" || (isOperatorClicked))
                 resultBox.Clear();
+            isOperatorClicked = false;
 
             Button button = (Button)sender;
-            resultBox.Text = resultBox.Text + button.Text;
+
+            if (button.Text == ".")
+            {
+                if (!resultBox.Text.Contains("."))
+                    resultBox.Text = resultBox.Text + button.Text;
+            }
+            else
+
+                resultBox.Text = resultBox.Text + button.Text;
         }
 
         private void operator_click(object sender, EventArgs e)
