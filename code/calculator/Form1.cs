@@ -41,5 +41,29 @@ namespace calculator
             resultValue = 0;
                 
         }
+
+        private void equalBtn_Click(object sender, EventArgs e)
+        {
+            switch (operatorClicked)
+            {
+
+                case "+":
+                    resultBox.Text = (resultValue + Double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "-":
+                    resultBox.Text = (resultValue - Double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "ˣ":
+                    resultBox.Text = (resultValue * Double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "÷":
+                    resultBox.Text = (resultValue / Double.Parse(resultBox.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
+
+
+        }
     }
 }
