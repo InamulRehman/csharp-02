@@ -14,6 +14,7 @@ namespace calculator
     {
         Double resultValue = 0;
         string operatorClicked = "";
+        bool isOperatorClicked = false;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +32,18 @@ namespace calculator
         private void operator_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            if (resultValue != 0)
+            {
+                equalBtn.PerformClick();
+                operatorClicked = button.Text;
+                isOperatorClicked = true;
+            }
+            else 
+            {
+                operatorClicked = button.Text;
+                resultValue = Double.Parse(resultBox.Text);
+                isOperatorClicked = true;
+            }
             operatorClicked = button.Text;
             resultValue = Double.Parse(resultBox.Text);
         }
