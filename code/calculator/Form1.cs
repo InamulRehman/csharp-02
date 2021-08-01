@@ -53,8 +53,8 @@ namespace calculator
                 resultValue = Double.Parse(resultBox.Text);
                 isOperatorClicked = true;
             }
-            operatorClicked = button.Text;
-            resultValue = Double.Parse(resultBox.Text);
+          //  operatorClicked = button.Text;
+          //  resultValue = Double.Parse(resultBox.Text);
         }
 
         private void clearBtn_Click(object sender, EventArgs e)
